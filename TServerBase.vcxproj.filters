@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="tbase">
+      <UniqueIdentifier>{6d4d8543-c901-43c7-b7be-bd4b66137611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tsocket">
+      <UniqueIdentifier>{a0593abb-54d3-478c-a3cf-f6e2341cc175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tlog">
+      <UniqueIdentifier>{7a3372c2-c5cf-4850-a4e1-45c02b72f5bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tconnection">
+      <UniqueIdentifier>{ef4303f8-399f-4038-9275-c65a980519d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tpacket">
+      <UniqueIdentifier>{0b346490-a543-4f34-8b9c-a89817f8b737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tsingleton">
+      <UniqueIdentifier>{b2dfe91a-0d5c-41f3-86f7-28cedc3ffe21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tservice_pool">
+      <UniqueIdentifier>{1f40ba94-84fa-4ec3-a485-e7439ab819b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tbase_server">
+      <UniqueIdentifier>{60cd6ef5-5b55-4711-a563-57f52dd10dfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ttimetool">
+      <UniqueIdentifier>{82fd46af-bbf8-47f1-b700-6c9f1ca393b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tsynergy_worker">
+      <UniqueIdentifier>{2f627745-1620-46e9-ab79-5c77e8fe1019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tconfig">
+      <UniqueIdentifier>{7673c4aa-0d8b-4a92-b671-c1efb6912e59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ttimer">
+      <UniqueIdentifier>{5ad94f57-9f3e-4dde-b1dd-cc7efbd77ca2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tsqldb">
+      <UniqueIdentifier>{b3335b90-6506-46ec-a33f-efe6692f9cc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tkvdb">
+      <UniqueIdentifier>{d8e0105f-5814-4bac-b9e2-9b29d2c4c01b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tutility">
+      <UniqueIdentifier>{a5e481c9-c8d0-42c0-a50e-7faf439b1e40}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tbase\ttypedef.h">
+      <Filter>tbase</Filter>
+    </ClInclude>
+    <ClInclude Include="tsocket\boost_sock_inc.h">
+      <Filter>tsocket</Filter>
+    </ClInclude>
+    <ClInclude Include="tsocket\sock_base.h">
+      <Filter>tsocket</Filter>
+    </ClInclude>
+    <ClInclude Include="tsocket\tsock_template.h">
+      <Filter>tsocket</Filter>
+    </ClInclude>
+    <ClInclude Include="tsocket\sock_callback.h">
+      <Filter>tsocket</Filter>
+    </ClInclude>
+    <ClInclude Include="tbase\nocopyable.h">
+      <Filter>tbase</Filter>
+    </ClInclude>
+    <ClInclude Include="tlog\tboost_log.h">
+      <Filter>tlog</Filter>
+    </ClInclude>
+    <ClInclude Include="tconnection\connection.h">
+      <Filter>tconnection</Filter>
+    </ClInclude>
+    <ClInclude Include="tbase\boost_common_inc.h">
+      <Filter>tbase</Filter>
+    </ClInclude>
+    <ClInclude Include="tpacket\base_pack.h">
+      <Filter>tpacket</Filter>
+    </ClInclude>
+    <ClInclude Include="tpacket\pack_owner.h">
+      <Filter>tpacket</Filter>
+    </ClInclude>
+    <ClInclude Include="tsingleton\singleton_template.h">
+      <Filter>tsingleton</Filter>
+    </ClInclude>
+    <ClInclude Include="tservice_pool\io_service_pool.h">
+      <Filter>tservice_pool</Filter>
+    </ClInclude>
+    <ClInclude Include="tbase_server\base_server.h">
+      <Filter>tbase_server</Filter>
+    </ClInclude>
+    <ClInclude Include="tconnection\connect_manager.h">
+      <Filter>tconnection</Filter>
+    </ClInclude>
+    <ClInclude Include="tsingleton\unique_id_manager.h">
+      <Filter>tsingleton</Filter>
+    </ClInclude>
+    <ClInclude Include="MyConnect.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyServer.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ttimetool\time_tool.h">
+      <Filter>ttimetool</Filter>
+    </ClInclude>
+    <ClInclude Include="tsynergy_worker\synergy_cell.h">
+      <Filter>tsynergy_worker</Filter>
+    </ClInclude>
+    <ClInclude Include="tsynergy_worker\synergy_worker.h">
+      <Filter>tsynergy_worker</Filter>
+    </ClInclude>
+    <ClInclude Include="tsynergy_worker\synergy_cell_manager.h">
+      <Filter>tsynergy_worker</Filter>
+    </ClInclude>
+    <ClInclude Include="tsynergy_worker\default_synergy_cell.h">
+      <Filter>tsynergy_worker</Filter>
+    </ClInclude>
+    <ClInclude Include="tconfig\config_loader.h">
+      <Filter>tconfig</Filter>
+    </ClInclude>
+    <ClInclude Include="tconfig\config_manager.h">
+      <Filter>tconfig</Filter>
+    </ClInclude>
+    <ClInclude Include="ttimer\ttimer.h">
+      <Filter>ttimer</Filter>
+    </ClInclude>
+    <ClInclude Include="ttimer\ttimer_event.h">
+      <Filter>ttimer</Filter>
+    </ClInclude>
+    <ClInclude Include="tsqldb\mysql_db_pool.h">
+      <Filter>tsqldb</Filter>
+    </ClInclude>
+    <ClInclude Include="tsqldb\mysql_accessor.h">
+      <Filter>tsqldb</Filter>
+    </ClInclude>
+    <ClInclude Include="tsqldb\db_config_info.h">
+      <Filter>tsqldb</Filter>
+    </ClInclude>
+    <ClInclude Include="TestSqlPool.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestSqlAccessor.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tkvdb\redis_accessor.h">
+      <Filter>tkvdb</Filter>
+    </ClInclude>
+    <ClInclude Include="tutility\char_conv.h">
+      <Filter>tutility</Filter>
+    </ClInclude>
+    <ClInclude Include="tkvdb\redis_db_pool.h">
+      <Filter>tkvdb</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tsocket\sock_bace.cpp">
+      <Filter>tsocket</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tsocket\sock_callback.cpp">
+      <Filter>tsocket</Filter>
+    </ClCompile>
+    <ClCompile Include="tlog\tboost_log.cc">
+      <Filter>tlog</Filter>
+    </ClCompile>
+    <ClCompile Include="tconnection\connection.cpp">
+      <Filter>tconnection</Filter>
+    </ClCompile>
+    <ClCompile Include="tpacket\pack_owner.cpp">
+      <Filter>tpacket</Filter>
+    </ClCompile>
+    <ClCompile Include="tservice_pool\io_service_pool.cpp">
+      <Filter>tservice_pool</Filter>
+    </ClCompile>
+    <ClCompile Include="tbase_server\base_server.cpp">
+      <Filter>tbase_server</Filter>
+    </ClCompile>
+    <ClCompile Include="tconnection\connect_manager.cpp">
+      <Filter>tconnection</Filter>
+    </ClCompile>
+    <ClCompile Include="tsingleton\uinque_id_manager.cpp">
+      <Filter>tsingleton</Filter>
+    </ClCompile>
+    <ClCompile Include="MyConnect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ttimetool\time_tool.cpp">
+      <Filter>ttimetool</Filter>
+    </ClCompile>
+    <ClCompile Include="tsynergy_worker\synergy_cell.cpp">
+      <Filter>tsynergy_worker</Filter>
+    </ClCompile>
+    <ClCompile Include="tsynergy_worker\synergy_worker.cpp">
+      <Filter>tsynergy_worker</Filter>
+    </ClCompile>
+    <ClCompile Include="tsynergy_worker\synergy_cell_manager.cpp">
+      <Filter>tsynergy_worker</Filter>
+    </ClCompile>
+    <ClCompile Include="tsynergy_worker\default_synergy_cell.cpp">
+      <Filter>tsynergy_worker</Filter>
+    </ClCompile>
+    <ClCompile Include="tconfig\config_loader.cpp">
+      <Filter>tconfig</Filter>
+    </ClCompile>
+    <ClCompile Include="tconfig\config_manager.cpp">
+      <Filter>tconfig</Filter>
+    </ClCompile>
+    <ClCompile Include="ttimer\ttimer.cpp">
+      <Filter>ttimer</Filter>
+    </ClCompile>
+    <ClCompile Include="ttimer\ttimer_event.cpp">
+      <Filter>ttimer</Filter>
+    </ClCompile>
+    <ClCompile Include="tsqldb\mysql_db_pool.cpp">
+      <Filter>tsqldb</Filter>
+    </ClCompile>
+    <ClCompile Include="tsqldb\mysql_accessor.cpp">
+      <Filter>tsqldb</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSqlPool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestSqlAccessor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tkvdb\redis_accessor.cpp">
+      <Filter>tkvdb</Filter>
+    </ClCompile>
+    <ClCompile Include="tkvdb\win32fixes.c">
+      <Filter>tkvdb</Filter>
+    </ClCompile>
+    <ClCompile Include="tutility\char_conv.cpp">
+      <Filter>tutility</Filter>
+    </ClCompile>
+    <ClCompile Include="tkvdb\redis_db_pool.cpp">
+      <Filter>tkvdb</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

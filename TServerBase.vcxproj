@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{523EA76C-44C7-44BC-BEC6-296DEC434E2F}</ProjectGuid>
+    <RootNamespace>TServerBase</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\MyDevelopeHome\Redis\redis-2.6-msvc\redis-2.6\src;D:\MyDevelopeHome\Redis\redis-2.6-msvc\redis-2.6\deps\hiredis;D:\MyDevelopeHome\Soci\socikit\include\backends\mysql;D:\MyDevelopeHome\Soci\socikit\include\core;D:\MyDevelopeHome\mysql5.6\include;./;D:\MyDevelopeHome\boost_1_58_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\MyDevelopeHome\Redis\lib;D:\MyDevelopeHome\Soci\socikit\dll;D:\MyDevelopeHome\Soci\socikit\lib\Debug;D:\MyDevelopeHome\mysql5.6\lib;D:\MyDevelopeHome\boost_1_58_0\stage\lib2;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libmysql.lib;mysqlclient.lib;libsoci_core_3_2.lib;libsoci_mysql_3_2.lib;hiredis.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/NODEFAULTLIB:libcmt.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="MyConnect.h" />
+    <ClInclude Include="TestSqlAccessor.h" />
+    <ClInclude Include="TestSqlPool.h" />
+    <ClInclude Include="MyServer.h" />
+    <ClInclude Include="tbase\boost_common_inc.h" />
+    <ClInclude Include="tbase\nocopyable.h" />
+    <ClInclude Include="tbase\ttypedef.h" />
+    <ClInclude Include="tbase_server\base_server.h" />
+    <ClInclude Include="tconfig\config_loader.h" />
+    <ClInclude Include="tconfig\config_manager.h" />
+    <ClInclude Include="tconnection\connection.h" />
+    <ClInclude Include="tconnection\connect_manager.h" />
+    <ClInclude Include="tkvdb\redis_accessor.h" />
+    <ClInclude Include="tkvdb\redis_db_pool.h" />
+    <ClInclude Include="tlog\tboost_log.h" />
+    <ClInclude Include="tpacket\base_pack.h" />
+    <ClInclude Include="tpacket\pack_owner.h" />
+    <ClInclude Include="tservice_pool\io_service_pool.h" />
+    <ClInclude Include="tsingleton\singleton_template.h" />
+    <ClInclude Include="tsingleton\unique_id_manager.h" />
+    <ClInclude Include="tsocket\boost_sock_inc.h" />
+    <ClInclude Include="tsocket\sock_base.h" />
+    <ClInclude Include="tsocket\sock_callback.h" />
+    <ClInclude Include="tsocket\tsock_template.h" />
+    <ClInclude Include="tsqldb\db_config_info.h" />
+    <ClInclude Include="tsqldb\mysql_accessor.h" />
+    <ClInclude Include="tsqldb\mysql_db_pool.h" />
+    <ClInclude Include="tsynergy_worker\default_synergy_cell.h" />
+    <ClInclude Include="tsynergy_worker\synergy_cell.h" />
+    <ClInclude Include="tsynergy_worker\synergy_cell_manager.h" />
+    <ClInclude Include="tsynergy_worker\synergy_worker.h" />
+    <ClInclude Include="ttimer\ttimer.h" />
+    <ClInclude Include="ttimer\ttimer_event.h" />
+    <ClInclude Include="ttimetool\time_tool.h" />
+    <ClInclude Include="tutility\char_conv.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyConnect.cpp" />
+    <ClCompile Include="MyServer.cpp" />
+    <ClCompile Include="tbase_server\base_server.cpp" />
+    <ClCompile Include="tconfig\config_loader.cpp" />
+    <ClCompile Include="tconfig\config_manager.cpp" />
+    <ClCompile Include="tconnection\connection.cpp" />
+    <ClCompile Include="tconnection\connect_manager.cpp" />
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="TestSqlAccessor.cpp" />
+    <ClCompile Include="TestSqlPool.cpp" />
+    <ClCompile Include="tkvdb\redis_accessor.cpp" />
+    <ClCompile Include="tkvdb\redis_db_pool.cpp" />
+    <ClCompile Include="tkvdb\win32fixes.c" />
+    <ClCompile Include="tlog\tboost_log.cc" />
+    <ClCompile Include="tpacket\pack_owner.cpp" />
+    <ClCompile Include="tservice_pool\io_service_pool.cpp" />
+    <ClCompile Include="tsingleton\uinque_id_manager.cpp" />
+    <ClCompile Include="tsocket\sock_bace.cpp" />
+    <ClCompile Include="tsocket\sock_callback.cpp" />
+    <ClCompile Include="tsqldb\mysql_accessor.cpp" />
+    <ClCompile Include="tsqldb\mysql_db_pool.cpp" />
+    <ClCompile Include="tsynergy_worker\default_synergy_cell.cpp" />
+    <ClCompile Include="tsynergy_worker\synergy_cell.cpp" />
+    <ClCompile Include="tsynergy_worker\synergy_cell_manager.cpp" />
+    <ClCompile Include="tsynergy_worker\synergy_worker.cpp" />
+    <ClCompile Include="ttimer\ttimer.cpp" />
+    <ClCompile Include="ttimer\ttimer_event.cpp" />
+    <ClCompile Include="ttimetool\time_tool.cpp" />
+    <ClCompile Include="tutility\char_conv.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
